@@ -1,5 +1,7 @@
 module.exports = {
-    publicPath: /Front-end-effects/,
+    publicPath: process.env.NODE_ENV === 'production'
+    ? '/Front-end-effects/'
+    : '/',
     configureWebpack: {
         module: {
             rules: [{
