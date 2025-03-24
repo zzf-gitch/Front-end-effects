@@ -1,0 +1,36 @@
+/* 主题切换过渡 */
+/** Animated Theme Toggle */
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none;
+  mix-blend-mode: normal;
+}
+
+/* 进入dark模式和退出dark模式时，两个图像的位置顺序正好相反 */
+::view-transition-old(root) {
+  z-index: 2147483646;
+}
+::view-transition-new(root) {
+  z-index: 1;
+}
+
+html[data-theme='dark']::view-transition-old(root) {
+  z-index: 1;
+}
+html[data-theme='dark']::view-transition-new(root) {
+  z-index: 2147483646;
+}
+
+/* 暗色主题 */
+html[data-theme='dark'] {
+    --text-color:#fff;
+    --bg1:#102128;
+    --bg2:#2d5567;
+}
+
+/* 亮色主题 */
+:root{
+    --text-color:#333;
+    --bg1:#c7ffdd;
+    --bg2:#fbd988;
+}

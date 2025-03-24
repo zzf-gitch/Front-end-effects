@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Gradient Text Effect</title>
+    <style>
+        .gradient-text-effect1 {
+            position: relative;
+            text-align: center;
+            line-height: 50px;
+            font-size: 40px;
+            font-weight: bolder;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-image: -webkit-linear-gradient(90deg,#007CF0,#00DFD8);
+            animation-name: breath1;
+            animation-duration: 9s;
+            animation-iteration-count: infinite;
+            animation-fill-mode: forwards;
+        }
+        .gradient-text-effect2 {
+            position: relative;
+            text-align: center;
+            line-height: 50px;
+            font-size: 40px;
+            font-weight: bolder;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-image: -webkit-linear-gradient(90deg,#7928CA,#FF0080);
+            animation-name: breath2;
+            animation-duration: 9s;
+            animation-iteration-count: infinite;
+            animation-fill-mode: forwards;
+        }
+        .gradient-text-effect3 {
+            position: relative;
+            text-align: center;
+            line-height: 50px;
+            font-size: 40px;
+            font-weight: bolder;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-image: -webkit-linear-gradient(90deg,#FF4D4D,#F9CB28);
+            animation-name: breath3;
+            animation-duration: 9s;
+            animation-iteration-count: infinite;
+            animation-fill-mode: forwards;
+        }
+        @keyframes breath2 {
+            0% {
+                opacity: 1;
+                text-shadow: 0 0 1px #000;
+            }
+            33% {
+                opacity: 1;
+                text-shadow: none;
+            }
+            66% {
+                opacity: 1;
+                text-shadow: 0 0 1px #000;
+            }
+            100% {
+                opacity: 1;
+                text-shadow: 0 0 1px #000;
+            }
+        }
+        @keyframes breath3 {
+            0% {
+                opacity: 1;
+                text-shadow: 0 0 1px #000;
+            }
+            33% {
+                opacity: 1;
+                text-shadow: 0 0 1px #000;
+            }
+            66% {
+                opacity: 1;
+                text-shadow: none;
+            }
+            100% {
+                opacity: 1;
+                text-shadow: 0 0 1px #000;
+            }
+        }
+        @keyframes breath1 {
+            0% {
+                opacity: 1;
+                text-shadow: none;
+            }
+            33% {
+                opacity: 1;
+                text-shadow: 0 0 1px #000;
+            }
+            66% {
+                opacity: 1;
+                text-shadow: 0 0 1px #000;
+            }
+            100% {
+                opacity: 1;
+                text-shadow: none;
+            }
+        }
+    </style>
+</head>
+<body>
+<span class="gradient-text-effect1">开发、</span>
+<span class="gradient-text-effect2">部署、</span>
+<span class="gradient-text-effect3">观测</span>
+</body>
+</html>
