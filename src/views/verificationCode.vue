@@ -38,7 +38,7 @@ import { ref } from 'vue'
 //设置一个全局的变量，便于保存验证码
 const code = ref('');
 const codeV = ref('')
-
+console.log('process.env.NODE_ENV', process.env.NODE_ENV)
 const createCode = () => {
     let CodeTest = ''
     //首先默认code为空字符串

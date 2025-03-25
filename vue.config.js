@@ -1,5 +1,5 @@
 module.exports = {
-    publicPath: '/Front-end-effects/',
+    // publicPath: '/Front-end-effects/',
     configureWebpack: {
         module: {
             rules: [{

@@ -11,6 +11,8 @@ import './style/theme.css'
 import "vxe-table/lib/style.css";
 import ElDate from './components/elDate.js'
 import directives from './utils/vSride'
+import './assets/fonts/iconfont.css'
+import 'animate.css'
 function useTable(app) {
     app.use(VXETable);
   }
